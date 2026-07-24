@@ -1,16 +1,18 @@
-// Include the necessary header file for the ring buffer
-#include "ringbuf.h"
+// Include necessary header files
+#include <stdio.h>
+#include "config.h"
+#include "utils.h"
 
-// Include the necessary header file for the test ring buffer
-#include "test_ringbuf.h"
+// Function to print usage
+void print_usage(void) {
+    printf("Usage: krr-read <input_file>\n");
+}
 
-int main() {
-    // Initialize the ring buffer
-    ringbuf_t ringbuf;
-    ringbuf_init(&ringbuf);
-
-    // Test the ring buffer
-    test_ringbuf(&ringbuf);
-
+int main(int argc, char **argv) {
+    if (argc != 2) {
+        print_usage();
+        return 1;
+    }
+    // Rest of the main function implementation
     return 0;
 }
