@@ -1,4 +1,9 @@
-/* Include the necessary header file */
 #include <stdio.h>
+#include "config.h"
+#include "utils.h"
+#include "ringbuf.h"
 
-/* Rest of the file remains the same */
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
