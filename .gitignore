@@ -1,33 +1,42 @@
-# ignore .idea and .vscode directories
-.idea/
-.vscode/
-
-# ignore .pyc and __pycache__ files
-*.pyc
-__pycache__/
-
-# ignore .DS_Store file
-.DS_Store
-
-# ignore coverage results
-coverage.xml
-.coverage
+# .gitignore
 
 # ignore build artifacts
 build/
-dist/
 
-# ignore pip cache
-.cache/
-pip-wheel-wheelhouse/
-
-# ignore node_modules and yarn.lock
+# ignore node_modules
 node_modules/
-yarn.lock
 
-# ignore docker build context
-docker/
+# ignore pyc files
+*.pyc
 
-# ignore generated files
-*.log
-*.tmp
+# ignore coverage reports
+coverage.xml
+coverage.html
+
+# ignore venv
+venv/
+
+# ignore IDE files
+.idea/
+.vscode/
+
+# ignore docker containers
+docker-compose.log
+docker-compose.log*
+
+# ignore local config files
+config.json
+config.yaml
+
+# ignore local db files
+*.db
+*.sqlite3
+
+# ignore local cache
+cache/
+
+# ignore local logs
+logs/
+
+# ignore local temp files
+tmp/
