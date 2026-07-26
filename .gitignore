@@ -1,15 +1,33 @@
-__pycache__/
+# ignore .idea and .vscode directories
+.idea/
+.vscode/
+
+# ignore .pyc and __pycache__ files
 *.pyc
-.pytest_cache/
-.env
-*.egg-info/
-dist/
+__pycache__/
+
+# ignore .DS_Store file
+.DS_Store
+
+# ignore coverage results
+coverage.xml
+.coverage
+
+# ignore build artifacts
 build/
-.venv/
+dist/
+
+# ignore pip cache
+.cache/
+pip-wheel-wheelhouse/
+
+# ignore node_modules and yarn.lock
 node_modules/
-target/
-bin/
-obj/
-*.o
-*.so
-*.dylib/
+yarn.lock
+
+# ignore docker build context
+docker/
+
+# ignore generated files
+*.log
+*.tmp
