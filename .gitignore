@@ -1,42 +1,34 @@
-# .gitignore
+# ignore .idea and .vscode directories
+.idea
+.vscode
 
-# ignore build artifacts
-build/
+# ignore .env file
+.env
 
-# ignore node_modules
-node_modules/
+# ignore build and dist directories
+build
+dist
 
-# ignore pyc files
-*.pyc
+# ignore node_modules directory
+node_modules
 
-# ignore coverage reports
+# ignore pycache directories
+__pycache__
+
+# ignore egg-info directories
+*.egg-info
+
+# ignore coverage directories
+htmlcov
 coverage.xml
-coverage.html
+.coveragerc
+.coverage
 
-# ignore venv
-venv/
+# ignore venv directory
+venv
 
-# ignore IDE files
-.idea/
-.vscode/
+# ignore .git directory
+.git
 
-# ignore docker containers
-docker-compose.log
-docker-compose.log*
-
-# ignore local config files
-config.json
-config.yaml
-
-# ignore local db files
-*.db
-*.sqlite3
-
-# ignore local cache
-cache/
-
-# ignore local logs
-logs/
-
-# ignore local temp files
-tmp/
+# ignore .gitignore itself
+!.gitignore
